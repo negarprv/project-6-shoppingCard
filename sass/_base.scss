@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+$color-primary: #f09d51;
+$color-main-white: #fff;
+$color-main-black: #222;
+$color-main-grey: #ececec;
+$main-spacing: 0.1rem;
+$main-transition: all 0.3s linear;
+
+*,
+* ::after,
+* ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-main-black;
+  background-color: $color-main-white;
+  font-family: "Lato", sans-serif;
+}
