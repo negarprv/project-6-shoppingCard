@@ -21,7 +21,7 @@
           <i class="fa-solid fa-bars"></i>
         </span>
         <img src="img/logo.svg" alt="logo" />
-        <div class="cart">
+        <div class="nav-cart">
           <span class="nav-icon">
             <i class="fa-solid fa-cart-shopping"></i>
           </span>
@@ -30,6 +30,67 @@
       </div>
     </nav>
     <!--end of Navbar-->
+    <!--Hero-->
+    <div class="hero">
+      <div class="banner">
+        <h1 class="banner_title">furniture collection</h1>
+        <button class="banner_btn">shop now</button>
+      </div>
+    </div>
+    <!--end of Hero-->
+    <!--Products Section-->
+    <section class="products">
+      <div class="products_title">
+        <h2>Our Products</h2>
+      </div>
+
+      <div class="products_center">
+        <article class="product">
+          <div class="img-container">
+            <img src="img/product-1.jpeg" alt="product 1" class="product-img" />
+            <button class="bag-btn" data-id="1">
+              <i class="fa-solid fa-cart-plus"></i>
+              add to cart
+            </button>
+          </div>
+
+          <h3>queen bed</h3>
+          <h4>$16</h4>
+        </article>
+      </div>
+    </section>
+    <!--end of Products Section-->
+    <!--Cart Section-->
+    <section class="cart-overlay">
+      <div class="cart">
+        <button class="close-cart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>your cart</h2>
+        <div class="cart-content">
+          <!--cart item-->
+          <div class="cart-item">
+            <img src="/img/product-1.jpeg" alt="product 1" />
+            <div>
+              <h4>queen bed</h4>
+              <h5>$9.00</h5>
+              <span class="remove-item">remove</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-chevron-up"></i>
+              <p class="item-amount">1</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <!--end of cart item-->
+        <div class="cart-footer">
+          <h3>your total : $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner_btn">clear cart</button>
+        </div>
+      </div>
+    </section>
+    <!--end of Cart Section-->
     <script src="app.js"></script>
   </body>
 </html>

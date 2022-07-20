@@ -1,0 +1,82 @@
+.products {
+  padding: 4rem 0;
+
+  &_title {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: $main-spacing;
+    margin-bottom: 5rem;
+  }
+
+  &_center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+  }
+}
+
+.product {
+  text-align: center;
+  letter-spacing: $main-spacing;
+
+  h3 {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    margin-top: 0.7rem;
+    color: $color-primary;
+    font-size: 1.3rem;
+  }
+
+  &-img {
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: all 0.3s linear;
+  }
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container:hover .product-img {
+  opacity: 0.5;
+}
+
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+
+.bag-btn {
+  position: absolute;
+  border: none;
+  top: 70%;
+  right: 0;
+  background-color: $color-primary;
+  color: $color-main-black;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: $main-spacing;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+
+  transform: translateX(101%);
+
+  &:hover {
+    color: $color-main-white;
+  }
+}
+
+.fa-cart-plus {
+  margin-right: 0.5rem;
+}

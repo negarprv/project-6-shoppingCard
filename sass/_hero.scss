@@ -1,0 +1,43 @@
+.hero {
+  min-height: calc(100vh - 6rem);
+  background-image: url(../img/hero-bcg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  background-color: $color-white-light;
+  text-align: center;
+  display: inline-block;
+  padding: 2rem;
+
+  &_title {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-size: 3.4rem;
+    letter-spacing: $main-spacing;
+  }
+
+  &_btn {
+    background-color: $color-primary;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+
+    letter-spacing: $main-spacing;
+    color: $color-main-black;
+    border: 1px solid $color-primary;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-primary;
+    }
+  }
+}
